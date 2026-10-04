@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dingo's Customs Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">Dingo's Customs Library</div>
+    <nav>
+      <a href="#">Library</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Left Column: Song Table/List Panel -->
+    <section class="list-panel">
+      <div class="list-header">
+        <span>&#x25B2;&#x25BC; VIEWING ALL 106 SONGS, SORTED BY NEWEST</span>
+      </div>
+      <ul class="song-list" id="songList">
+        <li class="song-item active" data-title="Ocean Eyes" data-artist="Billie Eilish" data-year="2016" data-cover="https://via.placeholder.com/300/171b2d/ffffff?text=Ocean+Eyes">
+          <span class="song-title">Ocean Eyes</span>
+          <span class="song-artist">Billie Eilish</span>
+          <span class="song-year">2016</span>
+        </li>
+        <li class="song-item" data-title="Cog Is Push - Solitary Isle" data-artist="Arvi Teikari" data-year="2019" data-cover="https://via.placeholder.com/300/171b2d/ffffff?text=Cog+Is+Push">
+          <span class="song-title">Cog Is Push - Solitary Isle</span>
+          <span class="song-artist">Arvi Teikari</span>
+          <span class="song-year">2019</span>
+        </li>
+        <li class="song-item" data-title="Hawaijahaj" data-artist="Sajjan Raj Vaidya" data-year="2017" data-cover="https://via.placeholder.com/300/171b2d/ffffff?text=Hawaijahaj">
+          <span class="song-title">Hawaijahaj</span>
+          <span class="song-artist">Sajjan Raj Vaidya</span>
+          <span class="song-year">2017</span>
+        </li>
+        <li class="song-item" data-title="Run For Your Life" data-artist="Tabahi" data-year="2023" data-cover="https://via.placeholder.com/300/171b2d/ffffff?text=Run+For+Your+Life">
+          <span class="song-title">Run For Your Life</span>
+          <span class="song-artist">Tabahi</span>
+          <span class="song-year">2023</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Right Column: Sticky Preview Panel -->
+    <aside class="preview-panel">
+      <div class="album-art-container">
+        <img id="albumArt" class="album-art" src="https://via.placeholder.com/300/171b2d/ffffff?text=Ocean+Eyes" alt="Album Cover" />
+        <div class="rockband-icon">🎸</div>
+      </div>
+      <div>
+        <h2 id="songTitle" class="preview-title">Welcome to Dingo's Customs Library</h2>
+        <p id="songArtist" class="preview-description">Select a song from the list to see its details including download/chart preview links.</p>
+      </div>
+      <ul class="details-list">
+        <li>New tracks added regularly, bookmark for regular updates</li>
+        <li>All customs in <code>.rb3con</code> format and hosted on Google Drive</li>
+        <li>Hover over the album cover for additional information</li>
+      </ul>
+      <div class="footer-note">Created by Dingo. Not affiliated with Harmonix or Rock Band.</div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
